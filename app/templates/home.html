@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Freazesss - Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
 <body>
-<div class="slider">
-    <h1>Gustavo Lins <br><br></h1>
-    <p>📍 Brasil - Recife</p>
-    <p>Olá meu nome é Gustavo Lins... <a href="{{ url_for('about.aboutpage')}}">Leia mais</a></p>
-    <p><br><br><br><a href="{{ url_for("home.homepage")}}">Home</a> <a href="{{ url_for("about.aboutpage") }}">About</a> <a href="https://github.com/freazesss">Github</a></p>
-</div>
+    <div class="slider">
+        <img src="{{ url_for('static', filename='img.jpg')}}" alt="My photo" style="width: 22%; border-radius: 50%; border: 5px solid #37dbe0;">
+    </div>
+    <div class="desc">
+        <h1>Gustavo Lins</h1>
+        <h2>Freazesss</h2>
+        <br><br>
+        <h4>Ola Meu nome é Gustavo Lins e eu sou um desenvolvedor Back-End.</h4>
+        <h4>Me acompanhe nessas redes sociais <a href="https://github.com/freazesss" target="_blank">Github</a><a href="https://twitter.com/freazesss" target="_blank">Twitter</a>.</h4>
+    </div>
 </body>
 </html>

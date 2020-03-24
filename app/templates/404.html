@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Freazesss - Not Found</title>
-    <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+    <title>Freazesss - 404 not found</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
 <body>
-<div class="slider">
-    <h1>Não tem nada aqui... 😱 <br> tente voltar para a <a href="{{ url_for('home.homepage') }}">Home</a></h1>
-</div>
+    <div class="desc">
+        <h1>Not-Found</h1>
+        <h3>Volte para a <a href="{{ url_for('home.homepage')}}" style="color: #9a2839;">home</a></h3>
+    </div>
 </body>
 </html>
